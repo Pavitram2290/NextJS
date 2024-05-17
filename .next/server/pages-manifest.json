@@ -1,0 +1,23 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html",
+  "/AbdulwahabAlQahtani": "pages/AbdulwahabAlQahtani.html",
+  "/about-us": "pages/about-us.html",
+  "/become-a-tutor": "pages/become-a-tutor.html",
+  "/book-private-class": "pages/book-private-class.html",
+  "/buisness-card": "pages/buisness-card.html",
+  "/careers-detail": "pages/careers-detail.html",
+  "/careers": "pages/careers.html",
+  "/coming-soon": "pages/coming-soon.html",
+  "/contact-us": "pages/contact-us.html",
+  "/": "pages/index.html",
+  "/privacy-policy-mobile": "pages/privacy-policy-mobile.html",
+  "/privacy-policy": "pages/privacy-policy.html",
+  "/private-class": "pages/private-class.html",
+  "/rashid": "pages/rashid.html",
+  "/terms-and-condition-mobile": "pages/terms-and-condition-mobile.html",
+  "/terms-and-condition": "pages/terms-and-condition.html",
+  "/hire-a-tutor": "pages/hire-a-tutor.js"
+}
