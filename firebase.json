@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/PaymentGatewayResult",
+        "function": "PaymentGatewayResult"
+      },
+      {
+        "source": "/privacy-policy",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/terms-and-condition",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
