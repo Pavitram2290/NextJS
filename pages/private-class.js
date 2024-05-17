@@ -11,8 +11,8 @@ import Teachers_Section from "@/components/sections/homepage/Startup/Teachers_Se
 import Download_links from "@/components/sections/homepage/Startup/Download_links";
 import HeadComponent from "@/components/layout/Header/Head";
 export default function Private_Class() {
-    const title = "برنامج الحصص الخاصة";
-    const content = "ياسا هو تطبيق وموقع الكتروني تعليمي هدفه رفع مستوى الطالب التعليمي طوال فترة دراسته من الصف السادس وحتى الصف الثاني عشر من خلال تقديم دروس خصوصية فرديه متنوعة";
+    const title = "جرب أول عرض لك";
+    const content = "لأن خدمات ياسا للحصص الخاصة المجدولة تساعدك في تحسين مستواك التعليمي بحيث تركز على أهم جوانب الضعف لديك وبشكل منظم.";
     return (
         <>
         <HeadComponent title={title}

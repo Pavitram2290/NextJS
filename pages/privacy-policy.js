@@ -5,7 +5,7 @@ import HeadComponent from "@/components/layout/Header/Head";
 
 export default function PrivacyPolicy() {
     const title = "سياسة الخصوصية";
-    const content = "نحن في ياسا نضمن التزامنا الصارم بخصوصيتك فيما يتعلق بحماية معلوماتك من أجل تزويدك بإمكانية الوصول الى خدماتنا بدون انقطاع";
+    const content ="نحن في ياسا نضمن التزامنا الصارم بخصوصيتك فيما يتعلق بحماية معلوماتك من أجل تزويدك بإمكانية الوصول الى خدماتنا بدون انقطاع"
 
 
     return (
