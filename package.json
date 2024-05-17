@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build && next export",
+        "build": "next build ",
         "start": "next start",
         "lint": "next lint",
         "sass": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css"
@@ -13,8 +13,6 @@
         "animate.css": "^4.1.1",
         "atropos": "^1.0.2",
         "axios": "^1.4.0",
-        "eslint": "8.34.0",
-        "eslint-config-next": "13.2.1",
         "isotope-layout": "^3.0.6",
         "leaflet": "^1.9.3",
         "next": "^13.2.1",
