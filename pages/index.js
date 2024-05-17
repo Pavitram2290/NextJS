@@ -1,105 +1,54 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import WriteToCloudFirestore from '@/components/cloudFirestore/Write'
-import ReadDataFromCloudFirestore from '@/components/cloudFirestore/Read'
-import { useUser } from '@/lib/firebase/useUser'
-import Counter from '@/components/realtimeDatabase/Counter'
-import UploadFile from '@/components/storage/UploadFile'
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
+import Head from 'next/head';
+import Layout from "@/components/layout/Layout";
 
-export default function Home() {
-  const { user, logout } = useUser()
+import Startup_Section3 from '@/components/sections/homepage/Startup/Startup_Section3';
+import Startup_Section4 from '@/components/sections/homepage/Startup/Startup_Section4';
+import Startup_Section5 from '@/components/sections/homepage/Startup/Startup_Section5';
+import Pricing_Section from "@/components/sections/homepage/Startup/Pricing_Section";
+import Service_Section from "@/components/sections/homepage/Startup/Service_Section";
+import Teachers_Section from "@/components/sections/homepage/Startup/Teachers_Section";
+import Download_links from "@/components/sections/homepage/Startup/Download_links";
+import Hide_A_Tutor_banner from "@/components/sections/homepage/Startup/Hide_A_Tutor_banner";
 
-  if (user) {
+
+import Home_Banner from "@/components/sections/homepage/Startup/Home_Banner";
+import FeedBack from "@/components/sections/homepage/Startup/FeedBack";
+import Section_1 from "@/components/sections/homepage/Startup/Section_1";
+import Our_Journey from "@/components/sections/homepage/Startup/Our_Journey";
+import HowDoesItWork from "@/components/sections/homepage/Startup/HowDoesItWork";
+import Download_Link from "@/components/sections/homepage/Startup/Download_Link";
+import Download_App from "@/components/sections/homepage/Startup/Download_App";
+
+export default function Index() {
+
     return (
-      <div className={styles.container}>
-        <Card>
-          <Card.Body>
-            <Card.Title>{user.name}</Card.Title>
-            <Card.Text>{user.email}</Card.Text>
-            <hr />
-            {user.profilePic ? <image src={user.profilePic} height={100} width={100}></image> : <p>No profile pic</p>}
-            <hr />
-            <WriteToCloudFirestore />
-            <ReadDataFromCloudFirestore />
-            <hr />
-            <Counter id={user.id} />
-            <hr />
-            <UploadFile />
-            <hr />
-            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-              <Button onClick={() => logout()} style={{ width: '100px' }}>Log Out</Button>
-              <a href="https://github.com/bjcarlson42/nextjs-with-firebase" target="_blank">
-                <Button variant="outline-secondary" style={{ width: '100px' }}>Code</Button>
-              </a>
-            </div>
-          </Card.Body>
-        </Card>
-      </div>
+        <>
+             <Head>
+                <title>ياسا للطالب</title>
+                <meta name="description" content="يمكنكم الوصول المباشر للمُعلمين على مدار الساعة وطوال أيام الأسبوع، في 60 ثانية فقط!" />
+                <meta name="og:title" content="اسأل الآن" />
+                <meta name="og:description" content="يمكنكم الوصول المباشر للمُعلمين على مدار الساعة وطوال أيام الأسبوع، في 60 ثانية فقط!" />
+            </Head>
+            <Layout siteContentClass="pt0 pb0">
+                <Home_Banner />
+
+                <HowDoesItWork />
+                <Hide_A_Tutor_banner />
+                <Section_1 />
+
+                {/* <Our_Journey /> */}
+
+                <Teachers_Section />
+
+                
+
+                {/* <FeedBack /> */}
+                
+                {/* <Download_App /> */}
+                <Startup_Section4 />
+                
+            </Layout>
+
+        </>
     )
-  }
-
-  else return (
-    <div className={styles.container}>
-      <p><a href="/auth">Log In!</a></p>
-
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
 }
