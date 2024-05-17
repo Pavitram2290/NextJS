@@ -25,7 +25,7 @@ export default function Menu({isActive}) {
                         <Link href="/" title=" اسأل الآن">اسأل الآن</Link>
                     </li>
                     <li className="is-mega-menu">
-                        <a href="/hire-a-tutor.html" title="اختيار المُعلم">اختيار المُعلم</a>
+                        <a href="/hire-a-tutor" title="اختيار المُعلم">اختيار المُعلم</a>
                     </li>
                     {/* <li className="is-mega-menu">
                         <Link href="/private-class">برنامج الحصص الخاصة</Link>
@@ -34,7 +34,7 @@ export default function Menu({isActive}) {
                         <Link href="/about-us">نبذة عن ياسا</Link>
                     </li> */}
                     <li className="is-mega-menu">
-                        <a href="/become-a-tutor.html">انضم إلينا (كمعلم) </a>
+                        <a href="/become-a-tutor">انضم إلينا (كمعلم) </a>
                     </li>
                     {/* <li className="is-mega-menu">
                         <Link href="https://blog.getyasa.com" target='_blank'>مدونة</Link>
